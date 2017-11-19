@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Music in the Browser</title>
+        <script src="lib/index.js" defer></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container.playing {
+                background: #82b9c4;
+            }
+
+            .play {
+                border: 3vw solid #03303a;
+                font-size: 15vw;
+                background: #ffffff;
+                outline: none;
+                text-transform: uppercase;
+                width: 50vw;
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                color: #03303a;
+            }
+
+            .play:hover {
+                cursor: pointer;
+                background: #03303a;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button type="button" class="play">Play</button>
+        </div>
+    </body>
+</html>
